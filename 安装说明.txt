@@ -1,0 +1,24 @@
+安装说明：www.dede168.com
+
+安装步骤：
+1、把源码包上传到网站根目录，并解压
+2、创建一个数据库
+然后导入数据库文件（源码根目录下的dede168.sql）到数据库
+导入完成后执行update.sql
+
+3、修改数据库
+
+打开：Application/Common/Conf/systemConfig.php
+配置服务器
+$public_system_db_host = '127.0.0.1';（这个不要修改）
+$public_system_db_name = 'ceshi';  //你的数据库名称
+$public_system_db_user = 'root';   //你的数据库用户名
+$public_system_db_pwd = 'root';  //你的数据库密码
+
+4、安装完成
+然后把php.ini里面的  max_execution_time  改成500  不然可能采集失败
+
+前台地址：http://域名
+后台地址：http://域名/adminc.php
+
+默认后台账号密码都是admin@qq.com  admin
